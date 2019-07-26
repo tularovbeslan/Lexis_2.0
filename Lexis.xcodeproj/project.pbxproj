@@ -8,11 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		2B0715DE22E6737700105FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0715DD22E6737700105FCF /* AppDelegate.swift */; };
-		2B0715E022E6737700105FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0715DF22E6737700105FCF /* ViewController.swift */; };
 		2B0715E522E6737A00105FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0715E422E6737A00105FCF /* Assets.xcassets */; };
 		2B0715E822E6737A00105FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0715E622E6737A00105FCF /* LaunchScreen.storyboard */; };
 		2B0715F322E6737B00105FCF /* LexisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0715F222E6737B00105FCF /* LexisTests.swift */; };
 		2B0715FE22E6737B00105FCF /* LexisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0715FD22E6737B00105FCF /* LexisUITests.swift */; };
+		2B07161422E6767500105FCF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07161322E6767500105FCF /* Coordinator.swift */; };
+		2B07161622E6769400105FCF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07161522E6769400105FCF /* BaseCoordinator.swift */; };
+		2B07161922E677C700105FCF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07161822E677C700105FCF /* Router.swift */; };
+		2B07161B22E677D600105FCF /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07161A22E677D600105FCF /* RouterImp.swift */; };
+		2B07161D22E6780600105FCF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07161C22E6780600105FCF /* Presentable.swift */; };
+		2B07162222E6794600105FCF /* FlowFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07162122E6794600105FCF /* FlowFactoryImp.swift */; };
+		2B07162422E679AC00105FCF /* LearnWordFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07162322E679AC00105FCF /* LearnWordFlowFactory.swift */; };
+		2B07162C22E67FFD00105FCF /* WordSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07162B22E67FFD00105FCF /* WordSetsViewController.swift */; };
+		2B07162E22E6800E00105FCF /* WordSetsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07162D22E6800E00105FCF /* WordSetsPresenter.swift */; };
+		2B07163022E6802900105FCF /* LearnWordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07162F22E6802900105FCF /* LearnWordCoordinator.swift */; };
+		2B07163222E6805600105FCF /* WordSetsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07163122E6805600105FCF /* WordSetsViewInput.swift */; };
+		2B07163422E6807300105FCF /* WordSetsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07163322E6807300105FCF /* WordSetsViewOutput.swift */; };
+		2B07163922E681A000105FCF /* WordSetsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07163822E681A000105FCF /* WordSetsModuleInput.swift */; };
+		2B07163B22E681AE00105FCF /* WordSetsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07163A22E681AE00105FCF /* WordSetsModuleOutput.swift */; };
+		2B07163E22E687E000105FCF /* LearnWordCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07163D22E687E000105FCF /* LearnWordCoordinatorOutput.swift */; };
+		2B07164322E91B7400105FCF /* WordsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164222E91B7400105FCF /* WordsListViewController.swift */; };
+		2B07164522E91B8500105FCF /* WordsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164422E91B8500105FCF /* WordsListViewOutput.swift */; };
+		2B07164722E91B9200105FCF /* WordsListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164622E91B9200105FCF /* WordsListViewInput.swift */; };
+		2B07164A22E91BA700105FCF /* WordsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164922E91BA700105FCF /* WordsListPresenter.swift */; };
+		2B07164C22E91BBC00105FCF /* WordsListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164B22E91BBC00105FCF /* WordsListModuleInput.swift */; };
+		2B07164E22E91BCB00105FCF /* WordsListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07164D22E91BCB00105FCF /* WordsListModuleOutput.swift */; };
+		2B07165622E91DA900105FCF /* LearnWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165522E91DA900105FCF /* LearnWordViewController.swift */; };
+		2B07165822E91DB900105FCF /* LearnWordViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165722E91DB900105FCF /* LearnWordViewInput.swift */; };
+		2B07165A22E91DC600105FCF /* LearnWordViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165922E91DC600105FCF /* LearnWordViewOutput.swift */; };
+		2B07165C22E91DD200105FCF /* LearnWordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165B22E91DD200105FCF /* LearnWordPresenter.swift */; };
+		2B07165E22E91DDF00105FCF /* LearnWordModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165D22E91DDF00105FCF /* LearnWordModuleInput.swift */; };
+		2B07166022E91DEB00105FCF /* LearnWordModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07165F22E91DEB00105FCF /* LearnWordModuleOutput.swift */; };
+		2B07166222E9213800105FCF /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07166122E9213800105FCF /* Word.swift */; };
+		2B07166522E921BB00105FCF /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07166422E921BB00105FCF /* WordService.swift */; };
+		2B07166722E921E100105FCF /* WordServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07166622E921E100105FCF /* WordServiceImp.swift */; };
+		2B07166922E923B000105FCF /* WordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07166822E923B000105FCF /* WordSet.swift */; };
+		2B07166B22E925DF00105FCF /* WordSetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07166A22E925DF00105FCF /* WordSetsViewController.xib */; };
+		2B07166D22E92CBC00105FCF /* WordSetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07166C22E92CBC00105FCF /* WordSetsCell.swift */; };
+		2B07166F22E92CD000105FCF /* WordSetsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07166E22E92CD000105FCF /* WordSetsCell.xib */; };
+		2B07167122E935EC00105FCF /* WordSetsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167022E935EC00105FCF /* WordSetsAssembly.swift */; };
+		2B07167322E9A3CA00105FCF /* WordsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07167222E9A3CA00105FCF /* WordsListViewController.xib */; };
+		2B07167522E9A3ED00105FCF /* WordsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167422E9A3ED00105FCF /* WordsListCell.swift */; };
+		2B07167722E9A3F800105FCF /* WordsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07167622E9A3F800105FCF /* WordsListCell.xib */; };
+		2B07167922E9B8EF00105FCF /* WordsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167822E9B8EF00105FCF /* WordsListAssembly.swift */; };
+		2B07167B22EA0A3F00105FCF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167A22EA0A3E00105FCF /* AppCoordinator.swift */; };
+		2B07167D22EA0AAB00105FCF /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167C22EA0AAB00105FCF /* CoordinatorFactory.swift */; };
+		2B07167F22EA0AC400105FCF /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07167E22EA0AC400105FCF /* CoordinatorFactoryImp.swift */; };
+		2B07168622EA44C100105FCF /* LearnWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07168522EA44C100105FCF /* LearnWordViewController.xib */; };
+		2B07168822EA466900105FCF /* LearnWordAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07168722EA466900105FCF /* LearnWordAssembly.swift */; };
+		2B07169122EA4ADD00105FCF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169022EA4ADD00105FCF /* OnboardingViewController.swift */; };
+		2B07169522EA4AFD00105FCF /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B07169422EA4AFD00105FCF /* OnboardingViewController.xib */; };
+		2B07169722EA4B1B00105FCF /* OnboardingViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169622EA4B1B00105FCF /* OnboardingViewInput.swift */; };
+		2B07169922EA4B2700105FCF /* OnboardingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169822EA4B2700105FCF /* OnboardingViewOutput.swift */; };
+		2B07169B22EA4B4E00105FCF /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169A22EA4B4E00105FCF /* OnboardingPresenter.swift */; };
+		2B07169D22EA4B5D00105FCF /* OnboardingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169C22EA4B5D00105FCF /* OnboardingModuleInput.swift */; };
+		2B07169F22EA4B6C00105FCF /* OnboardingModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07169E22EA4B6C00105FCF /* OnboardingModuleOutput.swift */; };
+		2B0716A122EA4B8400105FCF /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0716A022EA4B8400105FCF /* OnboardingAssembly.swift */; };
+		2B0716A422EA4F7400105FCF /* OnboardingFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0716A322EA4F7400105FCF /* OnboardingFlowFactory.swift */; };
+		2B0716A622EA4FCD00105FCF /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0716A522EA4FCD00105FCF /* OnboardingCoordinator.swift */; };
+		2B0716A822EA500F00105FCF /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0716A722EA500F00105FCF /* OnboardingCoordinatorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +89,6 @@
 /* Begin PBXFileReference section */
 		2B0715DA22E6737700105FCF /* Lexis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0715DD22E6737700105FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B0715DF22E6737700105FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B0715E422E6737A00105FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0715E722E6737A00105FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0715E922E6737A00105FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +98,61 @@
 		2B0715F922E6737B00105FCF /* LexisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LexisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0715FD22E6737B00105FCF /* LexisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexisUITests.swift; sourceTree = "<group>"; };
 		2B0715FF22E6737B00105FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B07161322E6767500105FCF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2B07161522E6769400105FCF /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		2B07161822E677C700105FCF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2B07161A22E677D600105FCF /* RouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		2B07161C22E6780600105FCF /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		2B07162122E6794600105FCF /* FlowFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactoryImp.swift; sourceTree = "<group>"; };
+		2B07162322E679AC00105FCF /* LearnWordFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordFlowFactory.swift; sourceTree = "<group>"; };
+		2B07162B22E67FFD00105FCF /* WordSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsViewController.swift; sourceTree = "<group>"; };
+		2B07162D22E6800E00105FCF /* WordSetsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsPresenter.swift; sourceTree = "<group>"; };
+		2B07162F22E6802900105FCF /* LearnWordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordCoordinator.swift; sourceTree = "<group>"; };
+		2B07163122E6805600105FCF /* WordSetsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsViewInput.swift; sourceTree = "<group>"; };
+		2B07163322E6807300105FCF /* WordSetsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsViewOutput.swift; sourceTree = "<group>"; };
+		2B07163822E681A000105FCF /* WordSetsModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsModuleInput.swift; sourceTree = "<group>"; };
+		2B07163A22E681AE00105FCF /* WordSetsModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsModuleOutput.swift; sourceTree = "<group>"; };
+		2B07163D22E687E000105FCF /* LearnWordCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordCoordinatorOutput.swift; sourceTree = "<group>"; };
+		2B07164222E91B7400105FCF /* WordsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewController.swift; sourceTree = "<group>"; };
+		2B07164422E91B8500105FCF /* WordsListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewOutput.swift; sourceTree = "<group>"; };
+		2B07164622E91B9200105FCF /* WordsListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewInput.swift; sourceTree = "<group>"; };
+		2B07164922E91BA700105FCF /* WordsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListPresenter.swift; sourceTree = "<group>"; };
+		2B07164B22E91BBC00105FCF /* WordsListModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListModuleInput.swift; sourceTree = "<group>"; };
+		2B07164D22E91BCB00105FCF /* WordsListModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListModuleOutput.swift; sourceTree = "<group>"; };
+		2B07165522E91DA900105FCF /* LearnWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordViewController.swift; sourceTree = "<group>"; };
+		2B07165722E91DB900105FCF /* LearnWordViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordViewInput.swift; sourceTree = "<group>"; };
+		2B07165922E91DC600105FCF /* LearnWordViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordViewOutput.swift; sourceTree = "<group>"; };
+		2B07165B22E91DD200105FCF /* LearnWordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordPresenter.swift; sourceTree = "<group>"; };
+		2B07165D22E91DDF00105FCF /* LearnWordModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordModuleInput.swift; sourceTree = "<group>"; };
+		2B07165F22E91DEB00105FCF /* LearnWordModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordModuleOutput.swift; sourceTree = "<group>"; };
+		2B07166122E9213800105FCF /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		2B07166422E921BB00105FCF /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
+		2B07166622E921E100105FCF /* WordServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordServiceImp.swift; sourceTree = "<group>"; };
+		2B07166822E923B000105FCF /* WordSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSet.swift; sourceTree = "<group>"; };
+		2B07166A22E925DF00105FCF /* WordSetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordSetsViewController.xib; sourceTree = "<group>"; };
+		2B07166C22E92CBC00105FCF /* WordSetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsCell.swift; sourceTree = "<group>"; };
+		2B07166E22E92CD000105FCF /* WordSetsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordSetsCell.xib; sourceTree = "<group>"; };
+		2B07167022E935EC00105FCF /* WordSetsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSetsAssembly.swift; sourceTree = "<group>"; };
+		2B07167222E9A3CA00105FCF /* WordsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsListViewController.xib; sourceTree = "<group>"; };
+		2B07167422E9A3ED00105FCF /* WordsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListCell.swift; sourceTree = "<group>"; };
+		2B07167622E9A3F800105FCF /* WordsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsListCell.xib; sourceTree = "<group>"; };
+		2B07167822E9B8EF00105FCF /* WordsListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListAssembly.swift; sourceTree = "<group>"; };
+		2B07167A22EA0A3E00105FCF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2B07167C22EA0AAB00105FCF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		2B07167E22EA0AC400105FCF /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
+		2B07168522EA44C100105FCF /* LearnWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnWordViewController.xib; sourceTree = "<group>"; };
+		2B07168722EA466900105FCF /* LearnWordAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordAssembly.swift; sourceTree = "<group>"; };
+		2B07169022EA4ADD00105FCF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2B07169422EA4AFD00105FCF /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		2B07169622EA4B1B00105FCF /* OnboardingViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewInput.swift; sourceTree = "<group>"; };
+		2B07169822EA4B2700105FCF /* OnboardingViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewOutput.swift; sourceTree = "<group>"; };
+		2B07169A22EA4B4E00105FCF /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		2B07169C22EA4B5D00105FCF /* OnboardingModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModuleInput.swift; sourceTree = "<group>"; };
+		2B07169E22EA4B6C00105FCF /* OnboardingModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModuleOutput.swift; sourceTree = "<group>"; };
+		2B0716A022EA4B8400105FCF /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		2B0716A322EA4F7400105FCF /* OnboardingFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowFactory.swift; sourceTree = "<group>"; };
+		2B0716A522EA4FCD00105FCF /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		2B0716A722EA500F00105FCF /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0715DD22E6737700105FCF /* AppDelegate.swift */,
+				2B07161222E6766300105FCF /* Coordinator */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -135,6 +244,9 @@
 		2B07160C22E6740300105FCF /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				2B07166322E9218E00105FCF /* Services */,
+				2B07161E22E6792300105FCF /* Factories */,
+				2B07161722E677B800105FCF /* Routing */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -149,6 +261,8 @@
 		2B07160E22E6742000105FCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B07166822E923B000105FCF /* WordSet.swift */,
+				2B07166122E9213800105FCF /* Word.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,7 +270,7 @@
 		2B07160F22E6743300105FCF /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				2B0715DF22E6737700105FCF /* ViewController.swift */,
+				2B07163722E6814500105FCF /* Flows */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -176,6 +290,286 @@
 				2B0715E922E6737A00105FCF /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B07161222E6766300105FCF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2B07161322E6767500105FCF /* Coordinator.swift */,
+				2B07161522E6769400105FCF /* BaseCoordinator.swift */,
+				2B07167A22EA0A3E00105FCF /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2B07161722E677B800105FCF /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2B07161C22E6780600105FCF /* Presentable.swift */,
+				2B07161822E677C700105FCF /* Router.swift */,
+				2B07161A22E677D600105FCF /* RouterImp.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		2B07161E22E6792300105FCF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2B07162022E6793600105FCF /* CoordinatorFactory */,
+				2B07161F22E6792D00105FCF /* FlowFactory */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2B07161F22E6792D00105FCF /* FlowFactory */ = {
+			isa = PBXGroup;
+			children = (
+				2B07162322E679AC00105FCF /* LearnWordFlowFactory.swift */,
+				2B0716A322EA4F7400105FCF /* OnboardingFlowFactory.swift */,
+				2B07162122E6794600105FCF /* FlowFactoryImp.swift */,
+			);
+			path = FlowFactory;
+			sourceTree = "<group>";
+		};
+		2B07162022E6793600105FCF /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				2B07167C22EA0AAB00105FCF /* CoordinatorFactory.swift */,
+				2B07167E22EA0AC400105FCF /* CoordinatorFactoryImp.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		2B07162722E67F7600105FCF /* LearnWordFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2B07162A22E67FBC00105FCF /* Coordinator */,
+				2B07163522E680D200105FCF /* Modules */,
+			);
+			path = LearnWordFlow;
+			sourceTree = "<group>";
+		};
+		2B07162822E67FA600105FCF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B07163822E681A000105FCF /* WordSetsModuleInput.swift */,
+				2B07163A22E681AE00105FCF /* WordSetsModuleOutput.swift */,
+				2B07162D22E6800E00105FCF /* WordSetsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B07162922E67FB000105FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B07163122E6805600105FCF /* WordSetsViewInput.swift */,
+				2B07163322E6807300105FCF /* WordSetsViewOutput.swift */,
+				2B07162B22E67FFD00105FCF /* WordSetsViewController.swift */,
+				2B07166A22E925DF00105FCF /* WordSetsViewController.xib */,
+				2B07166C22E92CBC00105FCF /* WordSetsCell.swift */,
+				2B07166E22E92CD000105FCF /* WordSetsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B07162A22E67FBC00105FCF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2B07163D22E687E000105FCF /* LearnWordCoordinatorOutput.swift */,
+				2B07162F22E6802900105FCF /* LearnWordCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2B07163522E680D200105FCF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B07165122E91C7600105FCF /* LearnWord */,
+				2B07164022E91B4400105FCF /* WordsList */,
+				2B07163622E680F800105FCF /* WordSets */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2B07163622E680F800105FCF /* WordSets */ = {
+			isa = PBXGroup;
+			children = (
+				2B07163C22E686E300105FCF /* Assembly */,
+				2B07162822E67FA600105FCF /* Presenter */,
+				2B07162922E67FB000105FCF /* View */,
+			);
+			path = WordSets;
+			sourceTree = "<group>";
+		};
+		2B07163722E6814500105FCF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				2B07168922EA4A2A00105FCF /* OnboardingFlow */,
+				2B07162722E67F7600105FCF /* LearnWordFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		2B07163C22E686E300105FCF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2B07167022E935EC00105FCF /* WordSetsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2B07164022E91B4400105FCF /* WordsList */ = {
+			isa = PBXGroup;
+			children = (
+				2B07165022E91C4500105FCF /* Assembly */,
+				2B07164822E91B9800105FCF /* Presenter */,
+				2B07164122E91B5900105FCF /* View */,
+			);
+			path = WordsList;
+			sourceTree = "<group>";
+		};
+		2B07164122E91B5900105FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B07164622E91B9200105FCF /* WordsListViewInput.swift */,
+				2B07164422E91B8500105FCF /* WordsListViewOutput.swift */,
+				2B07164222E91B7400105FCF /* WordsListViewController.swift */,
+				2B07167222E9A3CA00105FCF /* WordsListViewController.xib */,
+				2B07167422E9A3ED00105FCF /* WordsListCell.swift */,
+				2B07167622E9A3F800105FCF /* WordsListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B07164822E91B9800105FCF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B07164B22E91BBC00105FCF /* WordsListModuleInput.swift */,
+				2B07164D22E91BCB00105FCF /* WordsListModuleOutput.swift */,
+				2B07164922E91BA700105FCF /* WordsListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B07165022E91C4500105FCF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2B07167822E9B8EF00105FCF /* WordsListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2B07165122E91C7600105FCF /* LearnWord */ = {
+			isa = PBXGroup;
+			children = (
+				2B07165422E91C9600105FCF /* Assembly */,
+				2B07165322E91C8A00105FCF /* Presenter */,
+				2B07165222E91C8200105FCF /* View */,
+			);
+			path = LearnWord;
+			sourceTree = "<group>";
+		};
+		2B07165222E91C8200105FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B07165722E91DB900105FCF /* LearnWordViewInput.swift */,
+				2B07165922E91DC600105FCF /* LearnWordViewOutput.swift */,
+				2B07165522E91DA900105FCF /* LearnWordViewController.swift */,
+				2B07168522EA44C100105FCF /* LearnWordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B07165322E91C8A00105FCF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B07165D22E91DDF00105FCF /* LearnWordModuleInput.swift */,
+				2B07165F22E91DEB00105FCF /* LearnWordModuleOutput.swift */,
+				2B07165B22E91DD200105FCF /* LearnWordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B07165422E91C9600105FCF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2B07168722EA466900105FCF /* LearnWordAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2B07166322E9218E00105FCF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B07166422E921BB00105FCF /* WordService.swift */,
+				2B07166622E921E100105FCF /* WordServiceImp.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B07168922EA4A2A00105FCF /* OnboardingFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2B07168D22EA4A8000105FCF /* Coordinator */,
+				2B07168E22EA4A9000105FCF /* Modules */,
+			);
+			path = OnboardingFlow;
+			sourceTree = "<group>";
+		};
+		2B07168A22EA4A5B00105FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B07169622EA4B1B00105FCF /* OnboardingViewInput.swift */,
+				2B07169822EA4B2700105FCF /* OnboardingViewOutput.swift */,
+				2B07169022EA4ADD00105FCF /* OnboardingViewController.swift */,
+				2B07169422EA4AFD00105FCF /* OnboardingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B07168B22EA4A6100105FCF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B07169C22EA4B5D00105FCF /* OnboardingModuleInput.swift */,
+				2B07169E22EA4B6C00105FCF /* OnboardingModuleOutput.swift */,
+				2B07169A22EA4B4E00105FCF /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B07168C22EA4A7600105FCF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2B0716A022EA4B8400105FCF /* OnboardingAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2B07168D22EA4A8000105FCF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2B0716A722EA500F00105FCF /* OnboardingCoordinatorOutput.swift */,
+				2B0716A522EA4FCD00105FCF /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2B07168E22EA4A9000105FCF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B07168F22EA4ABA00105FCF /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2B07168F22EA4ABA00105FCF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2B07168C22EA4A7600105FCF /* Assembly */,
+				2B07168B22EA4A6100105FCF /* Presenter */,
+				2B07168A22EA4A5B00105FCF /* View */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +676,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B07166F22E92CD000105FCF /* WordSetsCell.xib in Resources */,
+				2B07168622EA44C100105FCF /* LearnWordViewController.xib in Resources */,
+				2B07166B22E925DF00105FCF /* WordSetsViewController.xib in Resources */,
+				2B07167322E9A3CA00105FCF /* WordsListViewController.xib in Resources */,
 				2B0715E822E6737A00105FCF /* LaunchScreen.storyboard in Resources */,
 				2B0715E522E6737A00105FCF /* Assets.xcassets in Resources */,
+				2B07167722E9A3F800105FCF /* WordsListCell.xib in Resources */,
+				2B07169522EA4AFD00105FCF /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +708,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0715E022E6737700105FCF /* ViewController.swift in Sources */,
+				2B07167122E935EC00105FCF /* WordSetsAssembly.swift in Sources */,
+				2B07167F22EA0AC400105FCF /* CoordinatorFactoryImp.swift in Sources */,
+				2B07167B22EA0A3F00105FCF /* AppCoordinator.swift in Sources */,
+				2B07163022E6802900105FCF /* LearnWordCoordinator.swift in Sources */,
+				2B07167522E9A3ED00105FCF /* WordsListCell.swift in Sources */,
+				2B07162422E679AC00105FCF /* LearnWordFlowFactory.swift in Sources */,
 				2B0715DE22E6737700105FCF /* AppDelegate.swift in Sources */,
+				2B07166D22E92CBC00105FCF /* WordSetsCell.swift in Sources */,
+				2B07168822EA466900105FCF /* LearnWordAssembly.swift in Sources */,
+				2B07163922E681A000105FCF /* WordSetsModuleInput.swift in Sources */,
+				2B0716A622EA4FCD00105FCF /* OnboardingCoordinator.swift in Sources */,
+				2B07164722E91B9200105FCF /* WordsListViewInput.swift in Sources */,
+				2B07163B22E681AE00105FCF /* WordSetsModuleOutput.swift in Sources */,
+				2B07161922E677C700105FCF /* Router.swift in Sources */,
+				2B0716A122EA4B8400105FCF /* OnboardingAssembly.swift in Sources */,
+				2B07163422E6807300105FCF /* WordSetsViewOutput.swift in Sources */,
+				2B07162E22E6800E00105FCF /* WordSetsPresenter.swift in Sources */,
+				2B07169B22EA4B4E00105FCF /* OnboardingPresenter.swift in Sources */,
+				2B07161B22E677D600105FCF /* RouterImp.swift in Sources */,
+				2B07169722EA4B1B00105FCF /* OnboardingViewInput.swift in Sources */,
+				2B07161422E6767500105FCF /* Coordinator.swift in Sources */,
+				2B07166722E921E100105FCF /* WordServiceImp.swift in Sources */,
+				2B07169922EA4B2700105FCF /* OnboardingViewOutput.swift in Sources */,
+				2B07163E22E687E000105FCF /* LearnWordCoordinatorOutput.swift in Sources */,
+				2B07165622E91DA900105FCF /* LearnWordViewController.swift in Sources */,
+				2B07165C22E91DD200105FCF /* LearnWordPresenter.swift in Sources */,
+				2B07164E22E91BCB00105FCF /* WordsListModuleOutput.swift in Sources */,
+				2B07166922E923B000105FCF /* WordSet.swift in Sources */,
+				2B07165A22E91DC600105FCF /* LearnWordViewOutput.swift in Sources */,
+				2B07164522E91B8500105FCF /* WordsListViewOutput.swift in Sources */,
+				2B07169D22EA4B5D00105FCF /* OnboardingModuleInput.swift in Sources */,
+				2B07162222E6794600105FCF /* FlowFactoryImp.swift in Sources */,
+				2B07164A22E91BA700105FCF /* WordsListPresenter.swift in Sources */,
+				2B07167D22EA0AAB00105FCF /* CoordinatorFactory.swift in Sources */,
+				2B07166222E9213800105FCF /* Word.swift in Sources */,
+				2B07166022E91DEB00105FCF /* LearnWordModuleOutput.swift in Sources */,
+				2B07163222E6805600105FCF /* WordSetsViewInput.swift in Sources */,
+				2B07169F22EA4B6C00105FCF /* OnboardingModuleOutput.swift in Sources */,
+				2B07165E22E91DDF00105FCF /* LearnWordModuleInput.swift in Sources */,
+				2B07166522E921BB00105FCF /* WordService.swift in Sources */,
+				2B07169122EA4ADD00105FCF /* OnboardingViewController.swift in Sources */,
+				2B07164C22E91BBC00105FCF /* WordsListModuleInput.swift in Sources */,
+				2B0716A422EA4F7400105FCF /* OnboardingFlowFactory.swift in Sources */,
+				2B07164322E91B7400105FCF /* WordsListViewController.swift in Sources */,
+				2B07165822E91DB900105FCF /* LearnWordViewInput.swift in Sources */,
+				2B07162C22E67FFD00105FCF /* WordSetsViewController.swift in Sources */,
+				2B0716A822EA500F00105FCF /* OnboardingCoordinatorOutput.swift in Sources */,
+				2B07167922E9B8EF00105FCF /* WordsListAssembly.swift in Sources */,
+				2B07161622E6769400105FCF /* BaseCoordinator.swift in Sources */,
+				2B07161D22E6780600105FCF /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

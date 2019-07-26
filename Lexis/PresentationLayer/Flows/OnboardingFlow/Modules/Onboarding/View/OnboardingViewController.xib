@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Lexis" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="Sz5-vd-cJH" id="O7z-J2-AII"/>
+                <outlet property="view" destination="knf-Fw-TYv" id="1Hh-zr-IWl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="knf-Fw-TYv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No more talking. let’s get hands dirty !!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whi-Rd-5u3">
+                    <rect key="frame" x="20" y="144" width="374" height="72"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-vd-cJH">
+                    <rect key="frame" x="158" y="316" width="98.5" height="54"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                    <color key="textColor" red="0.033602205218948904" green="0.31853141191709844" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHc-Sf-BPd">
+                    <rect key="frame" x="97" y="762" width="220" height="50"/>
+                    <color key="backgroundColor" red="0.36470588235294116" green="0.61176470588235299" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="TCH-kg-9bw"/>
+                        <constraint firstAttribute="height" constant="50" id="vsU-9a-HQy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Ок, погнали дальше">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="CyJ-Lx-3Q8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Whi-Rd-5u3" secondAttribute="trailing" constant="20" id="0yw-JL-fa6"/>
+                <constraint firstItem="wHc-Sf-BPd" firstAttribute="centerX" secondItem="knf-Fw-TYv" secondAttribute="centerX" id="JKt-HL-7EJ"/>
+                <constraint firstItem="VEY-Xq-VwQ" firstAttribute="bottom" secondItem="wHc-Sf-BPd" secondAttribute="bottom" constant="50" id="RlG-fn-ywT"/>
+                <constraint firstItem="Whi-Rd-5u3" firstAttribute="top" secondItem="VEY-Xq-VwQ" secondAttribute="top" constant="100" id="UGW-gs-Dd6"/>
+                <constraint firstItem="Sz5-vd-cJH" firstAttribute="centerX" secondItem="knf-Fw-TYv" secondAttribute="centerX" id="j4L-hp-iyu"/>
+                <constraint firstItem="Sz5-vd-cJH" firstAttribute="top" secondItem="Whi-Rd-5u3" secondAttribute="bottom" constant="100" id="sVC-Om-mJO"/>
+                <constraint firstItem="Whi-Rd-5u3" firstAttribute="leading" secondItem="VEY-Xq-VwQ" secondAttribute="leading" constant="20" id="x5C-tj-lCw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VEY-Xq-VwQ"/>
+            <point key="canvasLocation" x="87" y="94"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnWordViewController" customModule="Lexis" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="CNu-qa-RUE" id="3Iu-8y-XMI"/>
+                <outlet property="wordLabel" destination="4fJ-wM-tBL" id="p8G-5r-Fzo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CNu-qa-RUE">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fJ-wM-tBL">
+                    <rect key="frame" x="177.5" y="433" width="59.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4fJ-wM-tBL" firstAttribute="centerY" secondItem="CNu-qa-RUE" secondAttribute="centerY" id="opx-sW-s11"/>
+                <constraint firstItem="4fJ-wM-tBL" firstAttribute="centerX" secondItem="CNu-qa-RUE" secondAttribute="centerX" id="tll-tD-8q8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8k9-pJ-cUe"/>
+            <point key="canvasLocation" x="86" y="123"/>
+        </view>
+    </objects>
+</document>
